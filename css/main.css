@@ -1,0 +1,1178 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   /*---------------font familys-------------*/
+   @font-face {
+    font-family: 'SegoeUI';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../fonts/Segoe UI.woff') format('woff');
+    }
+
+
+        @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../fonts/Segoe UI Italic.woff') format('woff');
+    }   
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/Segoe UI Bold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../fonts/Segoe UI Bold Italic.woff') format('woff');
+    }
+  /*--------------------Central-----------------------*/
+      *{
+          font-family: 'SegoeUI'; 
+      }
+        .wrapper{   /* --zorgt dat de pagina 100% wijdt is--*/
+          margin: 0;
+          padding: 0;
+          width: 100%;
+
+        }  
+
+        .underline{
+          border-bottom: 2px solid;
+          padding-bottom: 2px;
+        }  
+
+        h2{
+          text-transform: uppercase;
+          font-size: 25px;
+        }
+
+  /*-------------------nav-------------------*/
+        nav{
+          background-image: url('../img/heroimg.png');
+          background-size: cover;
+          height: 600px;
+        }
+        .navcolor{
+          width: 100%;
+          background: #47545A;
+          opacity: 0.8;
+        }
+        .navcontent{    /* --zet pagina in het midden--*/
+          width: 900px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+        }
+
+         /*---styling logo---*/
+
+        .logo{
+          font-size: 30px;
+          font-family: 'Segoe UI Bold';
+          color: white;
+          text-transform: uppercase;
+          display: flex;
+
+        }
+        .bluelogo{
+          color: #4DCBFE;
+        }
+
+        /*---nav links styling---*/
+
+        .navlinks{
+          display: flex;
+          align-items: center;
+        }
+
+        .navlinks a{
+          text-decoration: none;
+          color: white;
+          margin: 15px;
+          padding: 10px;
+          text-transform: uppercase;
+          font-size: 18px;
+        }
+
+        .navlinks a:hover{
+          color: #4DCBFE;
+          border: 2px solid #4DCBFE;
+          padding-left: 7px;
+        }
+        /*---banner text styling---*/
+
+        .banner h1{
+          text-align: center;
+          padding: 15px;
+          background: #47545A;
+          color: white;
+          opacity: 0.8;
+          margin: 5px;
+
+        }
+
+        .bannercontent{
+          margin-top: 130px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+         }
+
+/*------------services-------------*/
+
+        .servicecolor{
+          background: #4DCBFE;
+        }
+
+        .servicecontent{   /* --zet pagina in het midden--*/
+          width: 900px;
+          margin: 0 auto;
+        }
+
+        /*---heading---*/
+
+        .headingservice{
+          padding: 20px 0;
+          display: flex;
+          font-size: 30px;
+          color: white;
+        }
+
+        .headingservice h2{
+          padding: 0;
+          margin: 0;
+        }
+
+        .servicetext{
+          display: flex;
+          flex-direction: row;
+          color: white;
+        }
+        
+    /*----------portfolio-----------*/
+
+         .portfoliocontent{   /* --zet pagina in het midden--*/
+          width: 900px;
+          margin: 0 auto;
+           text-transform: uppercase;/* //hoofdletter//*/
+        }
+
+        .portfoliocontent img{
+          width: 200px;
+          padding: 10px;
+        }
+
+        /*--heading--*/
+        .headingportfolio{
+          padding: 20px 0px;
+          display: flex;
+          font-size: 22px;
+        }
+        .headingportfolio h2{
+          margin: 0;
+          padding: 0;
+        }
+        .portfolioheader{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .linksportfolio a:hover{
+          color: #4DCBFE;
+          border: 2px solid #4DCBFE;
+        }
+
+        .linksportfolio a{
+          text-decoration: none;
+          margin-left: 2px;
+          color: black;
+          padding: 8px;
+        }
+
+
+    /*------------------default----------------*/
+
+        .colordefault{
+          background: #525F68;
+        }
+
+        .contentdefault{   /* --zet pagina in het midden--*/
+          width: 900px;
+          margin:0 auto;
+          color: white;
+        }
+
+        /*--heading--*/
+        .headingdefault{
+          display: flex;
+          font-size: 22px;
+          padding: 20px 0px;
+          color: white;
+        }
+         .headingdefault h2{
+          margin: 0;
+          padding: 0;
+         }
+
+         .defaultright p{
+          padding-bottom: 12px;
+         }
+        .defaulttext{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .defaultright{
+          grid-column: span 1;
+        }
+
+        .defaultright a{
+          color: black;
+          border: 2px solid black;
+          padding: 10px;
+          text-decoration: none;
+         }
+         .defaultleft img{
+          width: 500px;
+          padding-bottom: 30px;
+          margin-top: -30px;
+         }
+
+
+/*---------twitter------------*/
+
+        .twittercolor{
+          background: #4DCBFE;
+        }
+        .twittercontent{   /* --zet pagina in het midden--*/
+          width: 900px;
+          margin:0 auto;
+          color: white;
+        }
+
+      /*--header--*/
+        .twitter{
+          display: flex;
+          font-size: 22px;
+          padding: 20px 0px;
+          color: white;
+        }
+        .twitter h2{
+          margin:0 ;
+          padding: 0;
+        }
+        .headingtwitter{
+          display: flex;
+          justify-content: space-between;
+        }
+
+      .twitterlogo img{
+        padding: 10px;
+        margin-top: 20px;
+      }
+
+        .twittercontent a{
+          font-family: Segoe UI Bold; /*/maakt lettertype dikgedrukt/*/
+          color: white;
+          font-size: 18px;
+        }
+
+        .twittercontent p{
+          padding-bottom: 40px;
+          padding-top: 20px;
+          margin: 0;
+        }
+
+
+
+  /*-------------about-------------*/
+
+        .aboutcolor{
+          background-image: url('../img/background01.png');
+        }
+
+        .aboutcontent{  /* --zet pagina in het midden--*/
+          width: 900px;
+          margin: 0 auto;
+          color: white;
+        }
+
+      /*--heading--*/
+        .aboutheading{
+          display: flex;
+           padding: 20px 0px;
+        }
+        .aboutheading h2{
+          margin: 0;
+          padding: 0;
+        }
+
+        .abouttext{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .aboutleft{
+          grid-column: span 1;
+        }
+
+        .abouticons{
+          padding: 20px;
+        }
+
+        .abouticons img{
+          border: 1px solid white;
+          height: 25px;
+          width: 25px;
+          padding: 10px;
+        }
+
+    /*------------------test------------------*/
+
+        .testcontent{
+          width: 900px;   /* --zet pagina in het midden--*/
+          margin: 0 auto;
+        }
+
+      /*--heading--*/
+        .testheader{
+          display: flex;
+          justify-content: space-between;
+        }
+        .testheader p{
+          font-family: Segoe UI Bold; /*/dikgedrukt lettertype/*/
+        }
+        .test{
+          display: flex;
+          padding: 20px 0px;
+        }
+        .test h2{
+          margin: 0;
+          padding: 0;
+        }
+
+        .testcontent p{
+          font-size: 18px;
+        }
+
+        .testcontent a{
+          text-decoration: none;
+          color: #4DCBFE;
+        }
+
+    /*----contact-----*/
+
+    .contactcolor{
+       background-image: url('../img/background02.png'); /* --zet een plaatje als achtergrond--*/
+       height: 630px;
+    }
+
+    .contactcontent{
+      width: 900px;
+      margin: 0 auto;
+      color: white;
+    }
+
+  /*--heading--*/
+
+    .contactheading{
+     display: flex;
+     padding: 20px 0px;
+    }
+
+    .contactheading h2{
+      margin: 0;
+      padding: 0;
+    }
+
+/*------------content------------*/
+
+    .contactform{
+      display: grid;
+      grid-template-rows: 170px 1fr;
+    }
+
+    .contactform input{
+      background: transparent;  /*//maakt doorzichtig//*/
+    }
+
+    .contacttop{
+      grid-row: span 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .contacttop ol{  /*--zet bolletje uit--*/
+      list-style: none;
+      padding: 0;
+      margin: -20px;
+      margin-top: 4px;
+      margin-left: 1px;
+    }
+
+    .contactbottom input{
+      height: 250px;
+      width: 800px;
+      margin-bottom: 20px;
+    }
+
+    .contactcontent a{
+      border: 1px solid #4DCBFE;
+      background: #4DCBFE;
+      color: white;
+      text-decoration: none;
+      padding: 5px 30px;
+    }
+
+/*---------------footer-------------------*/
+
+  footer{
+    background: #323F48;
+    color: #525F68;
+  }
+
+  .footercontent{
+    width: 900px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footerlinks a{
+    padding: 15px 0px;
+    text-decoration: none;
+    margin: 0;
+    color: #525F68;
+  }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/*---------responsive-------------*/
+
+@media only screen and (max-width: 925px){
+
+    h2{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+    
+    /*///nav///*/
+    .navcontent{
+      width: 700px;
+    }
+
+    .navlinks a:hover{
+      display: none;
+        }
+
+    /*///service///*/
+    .servicecontent{
+      width: 700px;
+    }
+
+    .servicetext{
+      grid-gap: 3px;
+    }
+
+    .servicetext img{
+      height: 45px;
+    }
+
+    /*///portfolio///*/
+    .portfoliocontent{
+      width: 700px;
+      margin-bottom: 10px;
+    }
+
+    .linksportfolio a:hover{
+      display: none;
+    }
+
+    .portfoliocontent img{
+      width: 160px;
+      padding: 5px; 
+    }
+
+    /*///default///*/
+    .contentdefault{
+      width: 700px;
+    }
+
+    .defaultleft img{
+      width: 350px;
+    }
+    
+    .defaultright p{
+      padding-bottom: 8px;
+    }
+
+    .defaultright a{
+     font-size: 15px;
+     padding: 7px;  
+    }
+
+    /*///twitter///*/
+    .twittercontent{
+      width: 700px;
+    }
+
+    /*///about///*/
+    .aboutcontent{
+      width: 700px;
+    }
+    
+    .abouticons img{
+      border: 0.5px solid white;
+      height: 18px;
+      width: 18px;
+      padding: 8px;
+    }
+
+    /*///test///*/
+    .testcontent{
+      width: 700px;
+    }
+
+    .testcontent p{
+      font-size: 15px;
+    }
+
+    /*///contact///*/
+    .contactcontent{
+      width: 700px;
+    }
+    
+    .contactbottom input{
+      height: 200px;
+      width: 550px;
+    }
+
+    /*///footer///*/
+    .footercontent{
+      width: 700px;
+    }
+
+}
+@media only screen and (max-width: 715px){
+    .wrapper{
+      width: 100%;
+    }
+
+    h2{
+      font-size: 15px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    a{
+      font-size: 13px;
+    }
+    
+    /*///nav///*/
+    .navcontent{
+      width: 450px;
+      justify-content: space-around;
+    }
+
+    .navcontent a{
+      font-size: 14px;
+    }
+
+    /*///banner///*/
+    .banner{
+      height: 450px;
+    }
+
+    .bannercontent h1{
+      font-size: 22px;
+    }
+
+
+    /*///service///*/
+    .servicecontent{
+      width: 450px;
+    }
+
+    .servicetext{
+      grid-gap: 3px;
+    }
+
+    .servicetext img{
+      height: 35px;
+    }
+
+    /*///portfolio///*/
+    .portfoliocontent{
+      width: 450px;
+      margin-bottom: 10px;
+    }
+
+    .portfoliocontent img{
+      width: 100px;
+      padding: 2px; 
+    }
+
+    .portfoliocontent a{
+      font-size: 13px;
+    }
+
+    /*///default///*/
+    .contentdefault{
+      width: 450px;
+    }
+
+    .defaultleft img{
+      width: 250px;
+      margin-bottom: 25px;
+    }
+    
+    .defaultright p{
+      padding-bottom: 2px;
+      margin-right: 2px;
+    }
+
+    .defaultright a{
+     padding: 1px;
+     border: 0.6px solid;  
+    }
+
+    /*///twitter///*/
+    .twittercontent{
+      width: 450px;
+    }
+
+    .twittercontent a{
+      font-size: 13px;
+    }
+
+    .twittercontent img{
+      height: 20px;
+    }
+
+    /*///about///*/
+    .aboutcontent{
+      width: 450px;
+    }
+    
+    .abouticons img{
+      border: 0.5px solid white;
+      height: 15px;
+      width: 15px;
+      padding: 5px;
+    }
+
+    /*///test///*/
+    .testcontent{
+      width: 450px;
+    }
+
+    .testcontent p{
+      font-size: 13px;
+    }
+
+    /*///contact///*/
+    .contactcontent{
+      height: 350px;
+      width: 450px;
+    }
+
+    .contactcontent li{
+      font-size: 13px;
+    }
+    
+    .contactbottom input{
+      height: 150px;
+      width: 400px;
+    }
+
+    /*///footer///*/
+    .footercontent{
+      width: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 593px){
+
+  /*///nav.///*/
+  .navcontent{
+    width: 340px;
+  }
+
+  .navcontent a{
+    font-size: 11px;
+  }
+
+  .navlinks a{
+    margin: 4px;
+    padding: 4px;
+    font-size: 11px;
+        }
+  .navlinks a:hover{
+    display: none;
+  }
+
+  /*//banner//*/
+
+    .banner h1{
+      font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    h2{
+      font-size: 12px;
+    }
+
+    p{
+      font-size: 11px;
+    }
+
+    a{
+      font-size: 13px;
+    }
+    
+    /*///nav///*/
+    .navcontent{
+      width: 250px;
+      justify-content: space-around;
+    }
+
+    .navcontent a{
+      font-size: 11px;
+    }
+
+    /*///banner///*/
+    .banner{
+      height: 300px;
+    }
+
+    .bannercontent h1{
+      font-size: 14px;
+      align-items: center;
+      padding: 10px;  
+      margin-top: -10px;
+    }
+
+
+    /*///service///*/
+    .servicecontent{
+      width: 250px;
+    }
+
+    .servicetext{
+      grid-gap: 3px;
+      flex-direction: column;
+    }
+
+    .servicetext img{
+      height: 35px;
+      float: left;
+      padding-right: 5px;
+    }
+
+    /*///portfolio///*/
+    .portfoliocontent{
+      width: 250px;
+      margin-bottom: 10px;
+      margin: 0 auto; 
+    }
+
+    .portfoliocontent img{
+      width: 118px;
+      padding: 2px; 
+    }
+
+    .portfoliocontent h2{
+      text-align: left;
+    }
+
+    .portfoliocontent a{
+      font-size: 13px;
+    }
+
+    .portfolioheader{
+      flex-direction: column;
+    }
+
+    /*///default///*/
+    .contentdefault{
+      width: 250px;
+    }
+
+    .defaultright{
+      grid-column: span 2;
+    }
+
+    .defaultleft img{
+      display: none;
+    }
+    
+    .defaultright p{
+      padding-bottom: 2px;
+      margin-right: 2px;
+    }
+
+    .defaultright a{
+     border-style: none;
+     text-decoration: underline; 
+    }
+
+    /*///twitter///*/
+    .twittercontent{
+      width: 250px;
+    }
+
+    .twittercontent a{
+      font-size: 13px;
+    }
+
+    .twittercontent img{
+      display: none;
+    }
+
+    /*///about///*/
+    .aboutcontent{
+      width: 250px;
+    }
+
+    .abouttext{
+      grid-template-columns: 1fr
+    }
+    
+    .abouticons img{
+      border: 0.5px solid white;
+      height: 15px;
+      width: 15px;
+      padding: 5px;
+    }
+
+    /*///test///*/
+    .testcontent{
+      width: 250px;
+    }
+
+    .testcontent p{
+      font-size: 13px;
+    }
+
+    /*///contact///*/
+    .contactcontent{
+      width: 220px;
+    }
+
+    .contactcontent li{
+      font-size: 11px;
+    }
+
+    .contacttop{
+      grid-template-columns: 95px 160px;
+    }
+    
+    .contacttop input{
+      width: 70px;
+    }
+
+    .contactbottom input{
+      height: 120px;
+      width: 250px;
+    }
+
+    /*///footer///*/
+    .footercontent{
+      width: 250px;
+    }
+
+    .footercontent a{
+      font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+/*---------end---------*/
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
